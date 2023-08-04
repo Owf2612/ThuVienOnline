@@ -72,7 +72,7 @@ namespace thuvienonline
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void Addbooks_MouseDown(object sender, MouseEventArgs e)

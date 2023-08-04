@@ -16,7 +16,7 @@ namespace thuvienonline
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewBook());
+            Application.Run(new ViewStudent());
         }
     }
 }

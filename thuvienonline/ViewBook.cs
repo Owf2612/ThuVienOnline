@@ -72,11 +72,6 @@ namespace thuvienonline
             SearchBooks(null);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         int bid;
         Int64 rowid;
 

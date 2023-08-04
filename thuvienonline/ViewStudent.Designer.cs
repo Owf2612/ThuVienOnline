@@ -28,351 +28,323 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewStudent));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSEnrollment = new System.Windows.Forms.TextBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new thuvienonline.owf.TextBox();
+            this.txtAge = new thuvienonline.owf.TextBox();
+            this.txtClass = new thuvienonline.owf.TextBox();
+            this.txtStudentName = new thuvienonline.owf.TextBox();
+            this.uibtnUpdate = new thuvienonline.owf.UIButton();
+            this.uibtnDelete = new thuvienonline.owf.UIButton();
+            this.txtSearchStudents = new thuvienonline.owf.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtSName = new System.Windows.Forms.TextBox();
-            this.txtSSem = new System.Windows.Forms.TextBox();
-            this.txtSenroll = new System.Windows.Forms.TextBox();
-            this.txtSDep = new System.Windows.Forms.TextBox();
-            this.txtSemail = new System.Windows.Forms.TextBox();
-            this.txtSContact = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(72, 165);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1096, 223);
+            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel1.BackgroundImage = global::thuvienonline.Properties.Resources.ViewStudenFix;
             this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtAge);
+            this.panel1.Controls.Add(this.txtClass);
+            this.panel1.Controls.Add(this.txtStudentName);
+            this.panel1.Controls.Add(this.uibtnUpdate);
+            this.panel1.Controls.Add(this.uibtnDelete);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.txtSearchStudents);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 157);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SeaShell;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.txtSContact);
-            this.panel2.Controls.Add(this.txtSemail);
-            this.panel2.Controls.Add(this.txtSDep);
-            this.panel2.Controls.Add(this.txtSenroll);
-            this.panel2.Controls.Add(this.txtSSem);
-            this.panel2.Controls.Add(this.txtSName);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.btnRefresh);
-            this.panel2.Controls.Add(this.txtSEnrollment);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(0, 154);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(891, 842);
-            this.panel2.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(1239, 661);
+            this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Image = global::thuvienonline.Properties.Resources.Search;
+            this.pictureBox1.Location = new System.Drawing.Point(1110, 112);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(234, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(58, 22);
+            this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
+            this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtEmail.BorderRadius = 5;
+            this.txtEmail.BorderSize = 2;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEmail.Location = new System.Drawing.Point(676, 529);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Multiline = false;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEmail.PasswordChar = false;
+            this.txtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.PlaceholderText = "Enter Email ...";
+            this.txtEmail.ReadOnly = false;
+            this.txtEmail.Size = new System.Drawing.Size(313, 35);
+            this.txtEmail.TabIndex = 11;
+            this.txtEmail.Texts = "";
+            this.txtEmail.UnderlinedStyle = false;
+            // 
+            // txtAge
+            // 
+            this.txtAge.BackColor = System.Drawing.SystemColors.Window;
+            this.txtAge.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtAge.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtAge.BorderRadius = 5;
+            this.txtAge.BorderSize = 2;
+            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAge.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAge.Location = new System.Drawing.Point(266, 529);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAge.Multiline = false;
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAge.PasswordChar = false;
+            this.txtAge.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAge.PlaceholderText = "Enter Age ...";
+            this.txtAge.ReadOnly = false;
+            this.txtAge.Size = new System.Drawing.Size(313, 35);
+            this.txtAge.TabIndex = 10;
+            this.txtAge.Texts = "";
+            this.txtAge.UnderlinedStyle = false;
+            // 
+            // txtClass
+            // 
+            this.txtClass.BackColor = System.Drawing.SystemColors.Window;
+            this.txtClass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtClass.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtClass.BorderRadius = 5;
+            this.txtClass.BorderSize = 2;
+            this.txtClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClass.ForeColor = System.Drawing.Color.DimGray;
+            this.txtClass.Location = new System.Drawing.Point(676, 439);
+            this.txtClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtClass.Multiline = false;
+            this.txtClass.Name = "txtClass";
+            this.txtClass.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtClass.PasswordChar = false;
+            this.txtClass.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtClass.PlaceholderText = "Enter Class ...";
+            this.txtClass.ReadOnly = false;
+            this.txtClass.Size = new System.Drawing.Size(313, 35);
+            this.txtClass.TabIndex = 9;
+            this.txtClass.Texts = "";
+            this.txtClass.UnderlinedStyle = false;
+            // 
+            // txtStudentName
+            // 
+            this.txtStudentName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtStudentName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtStudentName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtStudentName.BorderRadius = 5;
+            this.txtStudentName.BorderSize = 2;
+            this.txtStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtStudentName.Location = new System.Drawing.Point(266, 439);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStudentName.Multiline = false;
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtStudentName.PasswordChar = false;
+            this.txtStudentName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtStudentName.PlaceholderText = "Enter Student Name ...";
+            this.txtStudentName.ReadOnly = false;
+            this.txtStudentName.Size = new System.Drawing.Size(313, 35);
+            this.txtStudentName.TabIndex = 8;
+            this.txtStudentName.Texts = "";
+            this.txtStudentName.UnderlinedStyle = false;
+            // 
+            // uibtnUpdate
+            // 
+            this.uibtnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.uibtnUpdate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.uibtnUpdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.uibtnUpdate.BorderRadius = 10;
+            this.uibtnUpdate.BorderSize = 0;
+            this.uibtnUpdate.FlatAppearance.BorderSize = 0;
+            this.uibtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uibtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uibtnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.uibtnUpdate.Location = new System.Drawing.Point(872, 609);
+            this.uibtnUpdate.Name = "uibtnUpdate";
+            this.uibtnUpdate.Size = new System.Drawing.Size(150, 40);
+            this.uibtnUpdate.TabIndex = 7;
+            this.uibtnUpdate.Text = "+ Update";
+            this.uibtnUpdate.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.uibtnUpdate.UseVisualStyleBackColor = false;
+            this.uibtnUpdate.Click += new System.EventHandler(this.uibtnUpdate_Click);
+            // 
+            // uibtnDelete
+            // 
+            this.uibtnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.uibtnDelete.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.uibtnDelete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.uibtnDelete.BorderRadius = 10;
+            this.uibtnDelete.BorderSize = 0;
+            this.uibtnDelete.FlatAppearance.BorderSize = 0;
+            this.uibtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uibtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uibtnDelete.ForeColor = System.Drawing.Color.White;
+            this.uibtnDelete.Location = new System.Drawing.Point(1042, 609);
+            this.uibtnDelete.Name = "uibtnDelete";
+            this.uibtnDelete.Size = new System.Drawing.Size(150, 40);
+            this.uibtnDelete.TabIndex = 6;
+            this.uibtnDelete.Text = "x Delete";
+            this.uibtnDelete.TextColor = System.Drawing.Color.White;
+            this.uibtnDelete.UseVisualStyleBackColor = false;
+            this.uibtnDelete.Click += new System.EventHandler(this.uibtnDelete_Click);
+            // 
+            // txtSearchStudents
+            // 
+            this.txtSearchStudents.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSearchStudents.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtSearchStudents.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtSearchStudents.BorderRadius = 10;
+            this.txtSearchStudents.BorderSize = 2;
+            this.txtSearchStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchStudents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.txtSearchStudents.Location = new System.Drawing.Point(321, 106);
+            this.txtSearchStudents.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchStudents.Multiline = false;
+            this.txtSearchStudents.Name = "txtSearchStudents";
+            this.txtSearchStudents.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSearchStudents.PasswordChar = false;
+            this.txtSearchStudents.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearchStudents.PlaceholderText = "Search Students Name";
+            this.txtSearchStudents.ReadOnly = false;
+            this.txtSearchStudents.Size = new System.Drawing.Size(855, 32);
+            this.txtSearchStudents.TabIndex = 4;
+            this.txtSearchStudents.Texts = "";
+            this.txtSearchStudents.UnderlinedStyle = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(413, 45);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label1.Location = new System.Drawing.Point(262, 413);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "View Student";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(733, -3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(155, 157);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Student Name *";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(37, 52);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label2.Location = new System.Drawing.Point(672, 413);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Enrollment No";
-            // 
-            // txtSEnrollment
-            // 
-            this.txtSEnrollment.Location = new System.Drawing.Point(274, 49);
-            this.txtSEnrollment.Multiline = true;
-            this.txtSEnrollment.Name = "txtSEnrollment";
-            this.txtSEnrollment.Size = new System.Drawing.Size(352, 35);
-            this.txtSEnrollment.TabIndex = 1;
-            this.txtSEnrollment.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(665, 47);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(132, 37);
-            this.btnRefresh.TabIndex = 2;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 111);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(867, 331);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.label2.Size = new System.Drawing.Size(67, 22);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Class *";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 528);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label3.Location = new System.Drawing.Point(262, 503);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Student Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Size = new System.Drawing.Size(54, 22);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Age *";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(473, 521);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label4.Location = new System.Drawing.Point(673, 503);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Student Semester";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Size = new System.Drawing.Size(66, 22);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Email *";
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 629);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Enrollment No";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(473, 629);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Student Contact";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(473, 717);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 20);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Student Email";
-            // 
-            // txtSName
-            // 
-            this.txtSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSName.Location = new System.Drawing.Point(169, 520);
-            this.txtSName.Multiline = true;
-            this.txtSName.Name = "txtSName";
-            this.txtSName.Size = new System.Drawing.Size(212, 28);
-            this.txtSName.TabIndex = 10;
-            // 
-            // txtSSem
-            // 
-            this.txtSSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSem.Location = new System.Drawing.Point(665, 514);
-            this.txtSSem.Multiline = true;
-            this.txtSSem.Name = "txtSSem";
-            this.txtSSem.Size = new System.Drawing.Size(212, 27);
-            this.txtSSem.TabIndex = 11;
-            // 
-            // txtSenroll
-            // 
-            this.txtSenroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenroll.Location = new System.Drawing.Point(169, 622);
-            this.txtSenroll.Multiline = true;
-            this.txtSenroll.Name = "txtSenroll";
-            this.txtSenroll.Size = new System.Drawing.Size(212, 27);
-            this.txtSenroll.TabIndex = 12;
-            // 
-            // txtSDep
-            // 
-            this.txtSDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDep.Location = new System.Drawing.Point(169, 710);
-            this.txtSDep.Multiline = true;
-            this.txtSDep.Name = "txtSDep";
-            this.txtSDep.Size = new System.Drawing.Size(212, 27);
-            this.txtSDep.TabIndex = 13;
-            // 
-            // txtSemail
-            // 
-            this.txtSemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSemail.Location = new System.Drawing.Point(665, 710);
-            this.txtSemail.Multiline = true;
-            this.txtSemail.Name = "txtSemail";
-            this.txtSemail.Size = new System.Drawing.Size(212, 27);
-            this.txtSemail.TabIndex = 14;
-            // 
-            // txtSContact
-            // 
-            this.txtSContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSContact.Location = new System.Drawing.Point(667, 622);
-            this.txtSContact.Multiline = true;
-            this.txtSContact.Name = "txtSContact";
-            this.txtSContact.Size = new System.Drawing.Size(212, 27);
-            this.txtSContact.TabIndex = 15;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.Red;
-            this.btnDelete.Location = new System.Drawing.Point(357, 782);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(135, 39);
-            this.btnDelete.TabIndex = 17;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.Location = new System.Drawing.Point(665, 782);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 39);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 717);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Department";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(55, 782);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 39);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox2.Image = global::thuvienonline.Properties.Resources.Close;
+            this.pictureBox2.Location = new System.Drawing.Point(1169, 67);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             // 
             // ViewStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(890, 1055);
-            this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(1239, 661);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewStudent";
             this.Text = "ViewStudent";
             this.Load += new System.EventHandler(this.ViewStudent_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ViewStudent_MouseDown);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.TextBox txtSEnrollment;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSContact;
-        private System.Windows.Forms.TextBox txtSemail;
-        private System.Windows.Forms.TextBox txtSDep;
-        private System.Windows.Forms.TextBox txtSenroll;
-        private System.Windows.Forms.TextBox txtSSem;
-        private System.Windows.Forms.TextBox txtSName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private owf.TextBox txtSearchStudents;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private owf.UIButton uibtnDelete;
+        private owf.UIButton uibtnUpdate;
+        private owf.TextBox txtStudentName;
+        private owf.TextBox txtAge;
+        private owf.TextBox txtClass;
+        private owf.TextBox txtEmail;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
