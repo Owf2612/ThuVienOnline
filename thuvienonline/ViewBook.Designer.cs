@@ -28,261 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBookSearch = new System.Windows.Forms.TextBox();
-            this.btnrefresh = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.btndelete = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
-            this.txtPDate = new System.Windows.Forms.DateTimePicker();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtBPublication = new System.Windows.Forms.TextBox();
-            this.txtBAuthor = new System.Windows.Forms.TextBox();
-            this.txtBName = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.UIbtnDelete = new thuvienonline.owf.UIButton();
+            this.UIbtnUpdate = new thuvienonline.owf.UIButton();
+            this.UItxtQuantity = new thuvienonline.owf.TextBox();
+            this.UItxtPrice = new thuvienonline.owf.TextBox();
+            this.txtAuthorName = new thuvienonline.owf.TextBox();
+            this.txtBookName = new thuvienonline.owf.TextBox();
             this.txtSearchBooks = new thuvienonline.owf.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtBookSearch
-            // 
-            this.txtBookSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookSearch.Location = new System.Drawing.Point(862, 247);
-            this.txtBookSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBookSearch.Name = "txtBookSearch";
-            this.txtBookSearch.Size = new System.Drawing.Size(252, 26);
-            this.txtBookSearch.TabIndex = 1;
-            this.txtBookSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // btnrefresh
-            // 
-            this.btnrefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrefresh.ForeColor = System.Drawing.Color.Black;
-            this.btnrefresh.Location = new System.Drawing.Point(1118, 247);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2);
-            this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(106, 25);
-            this.btnrefresh.TabIndex = 3;
-            this.btnrefresh.Text = "Refresh";
-            this.btnrefresh.UseVisualStyleBackColor = false;
-            this.btnrefresh.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 167);
+            this.dataGridView1.Location = new System.Drawing.Point(92, 160);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(760, 166);
+            this.dataGridView1.Size = new System.Drawing.Size(1057, 222);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Controls.Add(this.btncancel);
-            this.panel3.Controls.Add(this.btndelete);
-            this.panel3.Controls.Add(this.btnupdate);
-            this.panel3.Controls.Add(this.txtPDate);
-            this.panel3.Controls.Add(this.txtQuantity);
-            this.panel3.Controls.Add(this.txtPrice);
-            this.panel3.Controls.Add(this.txtBPublication);
-            this.panel3.Controls.Add(this.txtBAuthor);
-            this.panel3.Controls.Add(this.txtBName);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(59, 350);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(763, 274);
-            this.panel3.TabIndex = 5;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btncancel.Location = new System.Drawing.Point(645, 221);
-            this.btncancel.Margin = new System.Windows.Forms.Padding(2);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(76, 35);
-            this.btncancel.TabIndex = 19;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btndelete.Location = new System.Drawing.Point(355, 221);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(136, 35);
-            this.btndelete.TabIndex = 18;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btnupdate.Location = new System.Drawing.Point(18, 221);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(116, 35);
-            this.btnupdate.TabIndex = 17;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
-            this.btnupdate.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtPDate
-            // 
-            this.txtPDate.Location = new System.Drawing.Point(518, 37);
-            this.txtPDate.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPDate.Name = "txtPDate";
-            this.txtPDate.Size = new System.Drawing.Size(203, 20);
-            this.txtPDate.TabIndex = 16;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(518, 178);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.txtQuantity.Multiline = true;
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(203, 24);
-            this.txtQuantity.TabIndex = 15;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(518, 103);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPrice.Multiline = true;
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(203, 26);
-            this.txtPrice.TabIndex = 14;
-            // 
-            // txtBPublication
-            // 
-            this.txtBPublication.Location = new System.Drawing.Point(131, 180);
-            this.txtBPublication.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBPublication.Multiline = true;
-            this.txtBPublication.Name = "txtBPublication";
-            this.txtBPublication.Size = new System.Drawing.Size(147, 22);
-            this.txtBPublication.TabIndex = 12;
-            // 
-            // txtBAuthor
-            // 
-            this.txtBAuthor.Location = new System.Drawing.Point(131, 103);
-            this.txtBAuthor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBAuthor.Multiline = true;
-            this.txtBAuthor.Name = "txtBAuthor";
-            this.txtBAuthor.Size = new System.Drawing.Size(147, 22);
-            this.txtBAuthor.TabIndex = 11;
-            // 
-            // txtBName
-            // 
-            this.txtBName.Location = new System.Drawing.Point(131, 33);
-            this.txtBName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBName.Multiline = true;
-            this.txtBName.Name = "txtBName";
-            this.txtBName.Size = new System.Drawing.Size(147, 22);
-            this.txtBName.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(352, 181);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 15);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Book Quality";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(352, 110);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 15);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Book Price";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(352, 42);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 15);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Book Purchase Date";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 187);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 15);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Book Publication";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 39);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Book Name";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-2, 110);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 15);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Author Book Name";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::thuvienonline.Properties.Resources.Search;
-            this.pictureBox2.Location = new System.Drawing.Point(1093, 88);
+            this.pictureBox2.Location = new System.Drawing.Point(1081, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(57, 22);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -295,6 +88,186 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label1.Location = new System.Drawing.Point(259, 402);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 22);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Book Name *";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label2.Location = new System.Drawing.Point(677, 402);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 22);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Author Name *";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label9.Location = new System.Drawing.Point(259, 478);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 22);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Price *";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label10.Location = new System.Drawing.Point(677, 478);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 22);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Quantity *";
+            // 
+            // UIbtnDelete
+            // 
+            this.UIbtnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.UIbtnDelete.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.UIbtnDelete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(102)))));
+            this.UIbtnDelete.BorderRadius = 10;
+            this.UIbtnDelete.BorderSize = 2;
+            this.UIbtnDelete.FlatAppearance.BorderSize = 0;
+            this.UIbtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UIbtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UIbtnDelete.ForeColor = System.Drawing.Color.White;
+            this.UIbtnDelete.Location = new System.Drawing.Point(1042, 579);
+            this.UIbtnDelete.Name = "UIbtnDelete";
+            this.UIbtnDelete.Size = new System.Drawing.Size(150, 40);
+            this.UIbtnDelete.TabIndex = 14;
+            this.UIbtnDelete.Text = "x Delete";
+            this.UIbtnDelete.TextColor = System.Drawing.Color.White;
+            this.UIbtnDelete.UseVisualStyleBackColor = false;
+            this.UIbtnDelete.Click += new System.EventHandler(this.UIbtnDelete_Click);
+            // 
+            // UIbtnUpdate
+            // 
+            this.UIbtnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.UIbtnUpdate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(250)))));
+            this.UIbtnUpdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
+            this.UIbtnUpdate.BorderRadius = 10;
+            this.UIbtnUpdate.BorderSize = 2;
+            this.UIbtnUpdate.FlatAppearance.BorderSize = 0;
+            this.UIbtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UIbtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UIbtnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.UIbtnUpdate.Location = new System.Drawing.Point(876, 579);
+            this.UIbtnUpdate.Name = "UIbtnUpdate";
+            this.UIbtnUpdate.Size = new System.Drawing.Size(150, 40);
+            this.UIbtnUpdate.TabIndex = 13;
+            this.UIbtnUpdate.Text = "+ Update";
+            this.UIbtnUpdate.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.UIbtnUpdate.UseVisualStyleBackColor = false;
+            this.UIbtnUpdate.Click += new System.EventHandler(this.UIbtnUpdate_Click);
+            // 
+            // UItxtQuantity
+            // 
+            this.UItxtQuantity.BackColor = System.Drawing.SystemColors.Window;
+            this.UItxtQuantity.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.UItxtQuantity.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.UItxtQuantity.BorderRadius = 5;
+            this.UItxtQuantity.BorderSize = 2;
+            this.UItxtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UItxtQuantity.ForeColor = System.Drawing.Color.DimGray;
+            this.UItxtQuantity.Location = new System.Drawing.Point(681, 504);
+            this.UItxtQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UItxtQuantity.Multiline = false;
+            this.UItxtQuantity.Name = "UItxtQuantity";
+            this.UItxtQuantity.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.UItxtQuantity.PasswordChar = false;
+            this.UItxtQuantity.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.UItxtQuantity.PlaceholderText = "Enter Quantity ...";
+            this.UItxtQuantity.ReadOnly = false;
+            this.UItxtQuantity.Size = new System.Drawing.Size(313, 35);
+            this.UItxtQuantity.TabIndex = 12;
+            this.UItxtQuantity.Texts = "";
+            this.UItxtQuantity.UnderlinedStyle = false;
+            // 
+            // UItxtPrice
+            // 
+            this.UItxtPrice.BackColor = System.Drawing.SystemColors.Window;
+            this.UItxtPrice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.UItxtPrice.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.UItxtPrice.BorderRadius = 5;
+            this.UItxtPrice.BorderSize = 2;
+            this.UItxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UItxtPrice.ForeColor = System.Drawing.Color.DimGray;
+            this.UItxtPrice.Location = new System.Drawing.Point(263, 504);
+            this.UItxtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UItxtPrice.Multiline = false;
+            this.UItxtPrice.Name = "UItxtPrice";
+            this.UItxtPrice.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.UItxtPrice.PasswordChar = false;
+            this.UItxtPrice.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.UItxtPrice.PlaceholderText = "Enter Price ...";
+            this.UItxtPrice.ReadOnly = false;
+            this.UItxtPrice.Size = new System.Drawing.Size(313, 35);
+            this.UItxtPrice.TabIndex = 11;
+            this.UItxtPrice.Texts = "";
+            this.UItxtPrice.UnderlinedStyle = false;
+            // 
+            // txtAuthorName
+            // 
+            this.txtAuthorName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtAuthorName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtAuthorName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtAuthorName.BorderRadius = 5;
+            this.txtAuthorName.BorderSize = 2;
+            this.txtAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAuthorName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAuthorName.Location = new System.Drawing.Point(681, 428);
+            this.txtAuthorName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAuthorName.Multiline = false;
+            this.txtAuthorName.Name = "txtAuthorName";
+            this.txtAuthorName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAuthorName.PasswordChar = false;
+            this.txtAuthorName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAuthorName.PlaceholderText = "Enter Author Name ...";
+            this.txtAuthorName.ReadOnly = false;
+            this.txtAuthorName.Size = new System.Drawing.Size(313, 35);
+            this.txtAuthorName.TabIndex = 10;
+            this.txtAuthorName.Texts = "";
+            this.txtAuthorName.UnderlinedStyle = false;
+            // 
+            // txtBookName
+            // 
+            this.txtBookName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBookName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtBookName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtBookName.BorderRadius = 5;
+            this.txtBookName.BorderSize = 2;
+            this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBookName.Location = new System.Drawing.Point(263, 428);
+            this.txtBookName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBookName.Multiline = false;
+            this.txtBookName.Name = "txtBookName";
+            this.txtBookName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBookName.PasswordChar = false;
+            this.txtBookName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtBookName.PlaceholderText = "Enter Book Name ...";
+            this.txtBookName.ReadOnly = false;
+            this.txtBookName.Size = new System.Drawing.Size(313, 35);
+            this.txtBookName.TabIndex = 9;
+            this.txtBookName.Texts = "";
+            this.txtBookName.UnderlinedStyle = false;
+            // 
             // txtSearchBooks
             // 
             this.txtSearchBooks.BackColor = System.Drawing.SystemColors.Window;
@@ -304,7 +277,7 @@
             this.txtSearchBooks.BorderSize = 2;
             this.txtSearchBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchBooks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            this.txtSearchBooks.Location = new System.Drawing.Point(306, 82);
+            this.txtSearchBooks.Location = new System.Drawing.Point(294, 101);
             this.txtSearchBooks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchBooks.Multiline = false;
             this.txtSearchBooks.Name = "txtSearchBooks";
@@ -318,6 +291,17 @@
             this.txtSearchBooks.Texts = "";
             this.txtSearchBooks.UnderlinedStyle = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::thuvienonline.Properties.Resources.Close;
+            this.pictureBox3.Location = new System.Drawing.Point(1159, 61);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
+            // 
             // ViewBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,49 +309,50 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1239, 661);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.UIbtnDelete);
+            this.Controls.Add(this.UIbtnUpdate);
+            this.Controls.Add(this.UItxtQuantity);
+            this.Controls.Add(this.UItxtPrice);
+            this.Controls.Add(this.txtAuthorName);
+            this.Controls.Add(this.txtBookName);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtSearchBooks);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnrefresh);
-            this.Controls.Add(this.txtBookSearch);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewBook";
             this.Text = "ViewBook";
             this.Load += new System.EventHandler(this.ViewBook_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ViewBook_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtBookSearch;
-        private System.Windows.Forms.Button btnrefresh;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.DateTimePicker txtPDate;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtBPublication;
-        private System.Windows.Forms.TextBox txtBAuthor;
-        private System.Windows.Forms.TextBox txtBName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private owf.TextBox txtSearchBooks;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private owf.TextBox txtBookName;
+        private owf.TextBox txtAuthorName;
+        private owf.TextBox UItxtPrice;
+        private owf.TextBox UItxtQuantity;
+        private owf.UIButton UIbtnUpdate;
+        private owf.UIButton UIbtnDelete;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
