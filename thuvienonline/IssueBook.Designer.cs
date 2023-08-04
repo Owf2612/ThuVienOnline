@@ -28,358 +28,337 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssueBook));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnIssueB = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtContact = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSem = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDep = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.uibtnSearch = new System.Windows.Forms.PictureBox();
+            this.btnIssueBook = new thuvienonline.owf.UIButton();
+            this.uitxtIssueDate = new thuvienonline.owf.TextBox();
+            this.uitxtBookName = new thuvienonline.owf.TextBox();
+            this.uitxtEmail = new thuvienonline.owf.TextBox();
+            this.uitxtClass = new thuvienonline.owf.TextBox();
+            this.uitxtAge = new thuvienonline.owf.TextBox();
+            this.uitxtName = new thuvienonline.owf.TextBox();
+            this.txtSearchID = new thuvienonline.owf.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtEnrollment = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uibtnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Moccasin;
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, -2);
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackgroundImage = global::thuvienonline.Properties.Resources.IssueBook;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnIssueBook);
+            this.panel1.Controls.Add(this.uitxtIssueDate);
+            this.panel1.Controls.Add(this.uitxtBookName);
+            this.panel1.Controls.Add(this.uitxtEmail);
+            this.panel1.Controls.Add(this.uitxtClass);
+            this.panel1.Controls.Add(this.uitxtAge);
+            this.panel1.Controls.Add(this.uitxtName);
+            this.panel1.Controls.Add(this.uibtnSearch);
+            this.panel1.Controls.Add(this.txtSearchID);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 735);
+            this.panel1.Size = new System.Drawing.Size(1239, 661);
             this.panel1.TabIndex = 0;
             // 
-            // panel4
+            // uibtnSearch
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.btnIssueB);
-            this.panel4.Controls.Add(this.dateTimePicker1);
-            this.panel4.Controls.Add(this.txtEmail);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.txtContact);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.txtSem);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.txtDep);
-            this.panel4.Controls.Add(this.txtName);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(371, 120);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(594, 612);
-            this.panel4.TabIndex = 16;
+            this.uibtnSearch.Image = global::thuvienonline.Properties.Resources.Search;
+            this.uibtnSearch.Location = new System.Drawing.Point(1110, 113);
+            this.uibtnSearch.Name = "uibtnSearch";
+            this.uibtnSearch.Size = new System.Drawing.Size(56, 22);
+            this.uibtnSearch.TabIndex = 18;
+            this.uibtnSearch.TabStop = false;
+            this.uibtnSearch.Click += new System.EventHandler(this.uibtnSearch_Click);
             // 
-            // comboBox1
+            // btnIssueBook
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(235, 397);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(323, 24);
-            this.comboBox1.TabIndex = 20;
+            this.btnIssueBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(114)))), ((int)(((byte)(248)))));
+            this.btnIssueBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(114)))), ((int)(((byte)(248)))));
+            this.btnIssueBook.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(114)))), ((int)(((byte)(248)))));
+            this.btnIssueBook.BorderRadius = 10;
+            this.btnIssueBook.BorderSize = 0;
+            this.btnIssueBook.FlatAppearance.BorderSize = 0;
+            this.btnIssueBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIssueBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnIssueBook.ForeColor = System.Drawing.Color.White;
+            this.btnIssueBook.Location = new System.Drawing.Point(1047, 581);
+            this.btnIssueBook.Name = "btnIssueBook";
+            this.btnIssueBook.Size = new System.Drawing.Size(150, 40);
+            this.btnIssueBook.TabIndex = 25;
+            this.btnIssueBook.Text = "✓ Issue Book";
+            this.btnIssueBook.TextColor = System.Drawing.Color.White;
+            this.btnIssueBook.UseVisualStyleBackColor = false;
+            this.btnIssueBook.Click += new System.EventHandler(this.btnIssueBook_Click);
             // 
-            // btnIssueB
+            // uitxtIssueDate
             // 
-            this.btnIssueB.BackColor = System.Drawing.Color.MistyRose;
-            this.btnIssueB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIssueB.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnIssueB.Location = new System.Drawing.Point(406, 544);
-            this.btnIssueB.Name = "btnIssueB";
-            this.btnIssueB.Size = new System.Drawing.Size(152, 34);
-            this.btnIssueB.TabIndex = 19;
-            this.btnIssueB.Text = "Issue Book";
-            this.btnIssueB.UseVisualStyleBackColor = false;
-            this.btnIssueB.Click += new System.EventHandler(this.btnIssueB_Click);
+            this.uitxtIssueDate.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtIssueDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtIssueDate.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtIssueDate.BorderRadius = 5;
+            this.uitxtIssueDate.BorderSize = 2;
+            this.uitxtIssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtIssueDate.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtIssueDate.Location = new System.Drawing.Point(724, 509);
+            this.uitxtIssueDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtIssueDate.Multiline = false;
+            this.uitxtIssueDate.Name = "uitxtIssueDate";
+            this.uitxtIssueDate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtIssueDate.PasswordChar = false;
+            this.uitxtIssueDate.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtIssueDate.PlaceholderText = "Book Issue Date";
+            this.uitxtIssueDate.ReadOnly = false;
+            this.uitxtIssueDate.Size = new System.Drawing.Size(313, 35);
+            this.uitxtIssueDate.TabIndex = 24;
+            this.uitxtIssueDate.Texts = "";
+            this.uitxtIssueDate.UnderlinedStyle = false;
             // 
-            // dateTimePicker1
+            // uitxtBookName
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(235, 479);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(323, 22);
-            this.dateTimePicker1.TabIndex = 16;
+            this.uitxtBookName.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtBookName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtBookName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtBookName.BorderRadius = 5;
+            this.uitxtBookName.BorderSize = 2;
+            this.uitxtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtBookName.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtBookName.Location = new System.Drawing.Point(220, 509);
+            this.uitxtBookName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtBookName.Multiline = false;
+            this.uitxtBookName.Name = "uitxtBookName";
+            this.uitxtBookName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtBookName.PasswordChar = false;
+            this.uitxtBookName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtBookName.PlaceholderText = "Book Name";
+            this.uitxtBookName.ReadOnly = false;
+            this.uitxtBookName.Size = new System.Drawing.Size(313, 35);
+            this.uitxtBookName.TabIndex = 23;
+            this.uitxtBookName.Texts = "";
+            this.uitxtBookName.UnderlinedStyle = false;
             // 
-            // txtEmail
+            // uitxtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(235, 307);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(323, 28);
-            this.txtEmail.TabIndex = 14;
+            this.uitxtEmail.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtEmail.BorderRadius = 5;
+            this.uitxtEmail.BorderSize = 2;
+            this.uitxtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtEmail.Location = new System.Drawing.Point(724, 436);
+            this.uitxtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtEmail.Multiline = false;
+            this.uitxtEmail.Name = "uitxtEmail";
+            this.uitxtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtEmail.PasswordChar = false;
+            this.uitxtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtEmail.PlaceholderText = "Email";
+            this.uitxtEmail.ReadOnly = false;
+            this.uitxtEmail.Size = new System.Drawing.Size(313, 35);
+            this.uitxtEmail.TabIndex = 22;
+            this.uitxtEmail.Texts = "";
+            this.uitxtEmail.UnderlinedStyle = false;
             // 
-            // label4
+            // uitxtClass
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(47, 200);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Student Semester";
+            this.uitxtClass.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtClass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtClass.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtClass.BorderRadius = 5;
+            this.uitxtClass.BorderSize = 2;
+            this.uitxtClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtClass.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtClass.Location = new System.Drawing.Point(220, 436);
+            this.uitxtClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtClass.Multiline = false;
+            this.uitxtClass.Name = "uitxtClass";
+            this.uitxtClass.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtClass.PasswordChar = false;
+            this.uitxtClass.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtClass.PlaceholderText = "Class";
+            this.uitxtClass.ReadOnly = false;
+            this.uitxtClass.Size = new System.Drawing.Size(313, 35);
+            this.uitxtClass.TabIndex = 21;
+            this.uitxtClass.Texts = "";
+            this.uitxtClass.UnderlinedStyle = false;
             // 
-            // txtContact
+            // uitxtAge
             // 
-            this.txtContact.Location = new System.Drawing.Point(235, 243);
-            this.txtContact.Multiline = true;
-            this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(323, 28);
-            this.txtContact.TabIndex = 13;
+            this.uitxtAge.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtAge.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtAge.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtAge.BorderRadius = 5;
+            this.uitxtAge.BorderSize = 2;
+            this.uitxtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtAge.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtAge.Location = new System.Drawing.Point(724, 366);
+            this.uitxtAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtAge.Multiline = false;
+            this.uitxtAge.Name = "uitxtAge";
+            this.uitxtAge.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtAge.PasswordChar = false;
+            this.uitxtAge.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtAge.PlaceholderText = "Age";
+            this.uitxtAge.ReadOnly = false;
+            this.uitxtAge.Size = new System.Drawing.Size(313, 35);
+            this.uitxtAge.TabIndex = 20;
+            this.uitxtAge.Texts = "";
+            this.uitxtAge.UnderlinedStyle = false;
             // 
-            // label5
+            // uitxtName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(47, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Student Contact";
+            this.uitxtName.BackColor = System.Drawing.SystemColors.Window;
+            this.uitxtName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.uitxtName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.uitxtName.BorderRadius = 5;
+            this.uitxtName.BorderSize = 2;
+            this.uitxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uitxtName.ForeColor = System.Drawing.Color.DimGray;
+            this.uitxtName.Location = new System.Drawing.Point(220, 366);
+            this.uitxtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uitxtName.Multiline = false;
+            this.uitxtName.Name = "uitxtName";
+            this.uitxtName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.uitxtName.PasswordChar = false;
+            this.uitxtName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.uitxtName.PlaceholderText = "Student Name";
+            this.uitxtName.ReadOnly = false;
+            this.uitxtName.Size = new System.Drawing.Size(313, 35);
+            this.uitxtName.TabIndex = 19;
+            this.uitxtName.Texts = "";
+            this.uitxtName.UnderlinedStyle = false;
             // 
-            // txtSem
+            // txtSearchID
             // 
-            this.txtSem.Location = new System.Drawing.Point(235, 192);
-            this.txtSem.Multiline = true;
-            this.txtSem.Name = "txtSem";
-            this.txtSem.Size = new System.Drawing.Size(323, 28);
-            this.txtSem.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(47, 315);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Student Email";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(47, 397);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 20);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Book Name";
-            // 
-            // txtDep
-            // 
-            this.txtDep.Location = new System.Drawing.Point(235, 119);
-            this.txtDep.Multiline = true;
-            this.txtDep.Name = "txtDep";
-            this.txtDep.Size = new System.Drawing.Size(323, 28);
-            this.txtDep.TabIndex = 11;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(235, 41);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(323, 28);
-            this.txtName.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(47, 481);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Book Issue Date";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Student Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Department";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Controls.Add(this.btnRefresh);
-            this.panel3.Controls.Add(this.btnSearch);
-            this.panel3.Controls.Add(this.txtEnrollment);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(12, 120);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(353, 612);
-            this.panel3.TabIndex = 1;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(82, 97);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(175, 123);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.MistyRose;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Red;
-            this.btnExit.Location = new System.Drawing.Point(82, 436);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(175, 37);
-            this.btnExit.TabIndex = 18;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.MistyRose;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnRefresh.Location = new System.Drawing.Point(82, 380);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(175, 37);
-            this.btnRefresh.TabIndex = 17;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.MistyRose;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSearch.Location = new System.Drawing.Point(82, 315);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(175, 44);
-            this.btnSearch.TabIndex = 16;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtEnrollment
-            // 
-            this.txtEnrollment.Location = new System.Drawing.Point(52, 266);
-            this.txtEnrollment.Multiline = true;
-            this.txtEnrollment.Name = "txtEnrollment";
-            this.txtEnrollment.Size = new System.Drawing.Size(244, 29);
-            this.txtEnrollment.TabIndex = 15;
-            this.txtEnrollment.TextChanged += new System.EventHandler(this.txtEnrollment_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(78, 230);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 20);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Enter Enrollment No";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 111);
-            this.panel2.TabIndex = 0;
+            this.txtSearchID.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSearchID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.txtSearchID.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(216)))), ((int)(((byte)(247)))));
+            this.txtSearchID.BorderRadius = 10;
+            this.txtSearchID.BorderSize = 2;
+            this.txtSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSearchID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.txtSearchID.Location = new System.Drawing.Point(216, 107);
+            this.txtSearchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchID.Multiline = false;
+            this.txtSearchID.Name = "txtSearchID";
+            this.txtSearchID.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSearchID.PasswordChar = false;
+            this.txtSearchID.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearchID.PlaceholderText = "Enter ID Student";
+            this.txtSearchID.ReadOnly = false;
+            this.txtSearchID.Size = new System.Drawing.Size(960, 32);
+            this.txtSearchID.TabIndex = 17;
+            this.txtSearchID.Texts = "";
+            this.txtSearchID.UnderlinedStyle = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(616, 37);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label1.Location = new System.Drawing.Point(216, 340);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Issue Book";
+            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Student Name *";
             // 
-            // pictureBox2
+            // label2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(466, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(120, 108);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label2.Location = new System.Drawing.Point(720, 340);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 22);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Age *";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label3.Location = new System.Drawing.Point(216, 410);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Class *";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label4.Location = new System.Drawing.Point(720, 410);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 22);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Email *";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label5.Location = new System.Drawing.Point(216, 483);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 22);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Book Name*";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(57)))), ((int)(((byte)(114)))));
+            this.label6.Location = new System.Drawing.Point(720, 483);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 22);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Issue Date*";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Image = global::thuvienonline.Properties.Resources.Close;
+            this.pictureBox1.Location = new System.Drawing.Point(1173, 64);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // IssueBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 733);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(1239, 661);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "IssueBook";
             this.Text = "IssueBook";
             this.Load += new System.EventHandler(this.IssueBook_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.IssueBook_MouseDown);
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uibtnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -388,32 +367,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private owf.TextBox txtSearchID;
+        private System.Windows.Forms.PictureBox uibtnSearch;
+        private owf.TextBox uitxtName;
+        private owf.TextBox uitxtIssueDate;
+        private owf.TextBox uitxtBookName;
+        private owf.TextBox uitxtEmail;
+        private owf.TextBox uitxtClass;
+        private owf.TextBox uitxtAge;
+        private owf.UIButton btnIssueBook;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtContact;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtSem;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtDep;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtEnrollment;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnIssueB;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
